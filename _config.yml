@@ -9,6 +9,6 @@ future:      true
 lsi:         false
 pygments:    false
 markdown:    maruku
-permalink:   /:categories/:year-:month-:day
+permalink:   /:categories/:title
 
 exclude: Gemfile, Gemfile.lock, Rakefile, TODOS.txt, bin, ruby-webapps-tutoiral.tmproj

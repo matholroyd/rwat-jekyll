@@ -1,14 +1,8 @@
 ---
-title: REST protocol and the web
+title: REST Protocol And The Web
 layout: default
-group: web
+categories: web
 ---
-
-## REST protocol and the web
-
-* How web works / was designed
-  * REST in 30 secs 
-  
   
 What is the web? A bunch of computers and other devices connected together on the Internet, sending webpages and other data back and forth. Lovely, we're all pretty used to it using browsers every day, but to build a web app yourself, you need a little grounding on what's actually going on behind the scenes.
 

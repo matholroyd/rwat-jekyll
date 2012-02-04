@@ -1,10 +1,7 @@
 ---
-title: Setting up Ruby
 layout: default
-group: ruby
+categories: ruby
 ---
-
-# Setting up Ruby
 
 Below is bunch of notes and links to get you started with Ruby.
 
