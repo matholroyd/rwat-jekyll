@@ -11,6 +11,7 @@
 	<title>Ruby Webapps Tutorial</title>
 
 	<link rel="stylesheet" href="/stylesheets/screen.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="/stylesheets/main.css" type="text/css" media="screen, projection" />
 	<link rel="stylesheet" href="/stylesheets/print.css" type="text/css" media="print" />
 	<!--[if lt IE 8]>
 	<link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen, projection">
@@ -21,16 +22,17 @@
 
 </head>
 <body class="default {{ page.body_class }} {% if page.category %}{{page.category}}-{% endif %} {{page.title}}">
-  {% include helpers/nav_bar.html %}
-  
-  <div class="container">
-  	<div class="content prepend-4 span-16 append-4 last">
+  <div class="container prepend-4 span-16 append-4 last">
+    {% include helpers/nav_bar.html %}
+
+  	<div id="content">
   	  {{ content }}
     </div>
-    <div class="footer"> 
+    <footer id="footer"> 
       <section class="company">
+        Mat Holroyd &copy; 2012
       </section>
-    </div> 
+    </footer> 
   </div>
 </body>
 </html>

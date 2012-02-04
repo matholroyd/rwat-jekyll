@@ -1,0 +1,15 @@
+<nav id="nav">
+  <label>Web</label>
+  <ul>
+    {% assign pages_list = site.pages %} 
+    {% assign group = "web" %} 
+    {% include helpers/pages_list.html %}
+  </ul>
+
+  <label>Ruby</label>
+  <ul>
+    {% assign pages_list = site.pages %} 
+    {% assign group = "ruby" %} 
+    {% include helpers/pages_list.html %}
+  </ul>
+</nav>

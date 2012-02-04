@@ -1,6 +1,7 @@
 ---
+title: Playing with Ruby
 layout: default
-category: ruby
+group: ruby
 ---
 
 

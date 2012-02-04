@@ -1,6 +1,7 @@
 ---
+title: Setting up Ruby
 layout: default
-category: ruby
+group: ruby
 ---
 
 # Setting up Ruby

@@ -1,6 +1,7 @@
 ---
+title: REST protocol and the web
 layout: default
-category: ruby
+group: web
 ---
 
 ## REST protocol and the web
