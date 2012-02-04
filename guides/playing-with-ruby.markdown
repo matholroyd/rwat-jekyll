@@ -1,3 +1,9 @@
+---
+layout: default
+category: ruby
+---
+
+
 # Playing with Ruby
 
 To get started, you either need Ruby installed on your computer, or you can go to http://tryruby.org and play with Ruby in the browser. The tryruby.org website has a fantastic tutorial and you can write Ruby code directly in the browser, but is unfortunately a tad slow (at least here in Australia).

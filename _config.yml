@@ -1,0 +1,14 @@
+safe:        false
+auto:        true
+server:      false
+
+source:      .
+destination: ./_site
+
+future:      true
+lsi:         false
+pygments:    false
+markdown:    maruku
+permalink:   /:categories/:year-:month-:day
+
+exclude: Gemfile, Gemfile.lock, Rakefile, TODOS.txt, bin, ruby-webapps-tutoiral.tmproj

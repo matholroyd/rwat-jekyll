@@ -1,3 +1,8 @@
+---
+layout: default
+category: ruby
+---
+
 # Setting up Ruby
 
 Below is bunch of notes and links to get you started with Ruby.

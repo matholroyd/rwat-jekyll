@@ -1,3 +1,8 @@
+---
+layout: default
+category: ruby
+---
+
 ## REST protocol and the web
 
 * How web works / was designed
