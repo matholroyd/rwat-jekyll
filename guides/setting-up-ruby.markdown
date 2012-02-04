@@ -11,7 +11,7 @@ Below is bunch of notes and links to get you started with Ruby.
 **Windows** - Windows does not come with Ruby, so it will need to be installed.
 
 
-# Installing Ruby
+## Installing Ruby
 
 There are a bunch of guides for Mac, Linux and Windows at http://www.ruby-lang.org/en/downloads/. Rather then repeating them, you should just go there.
 
