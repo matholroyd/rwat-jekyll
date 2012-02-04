@@ -1,6 +1,5 @@
 ---
 title: REST Protocol And The Web
-layout: default
 categories: web
 ---
   
