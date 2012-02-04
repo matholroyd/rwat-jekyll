@@ -25,7 +25,10 @@ $line: 18px;
   text-align:center;
 }
 
-code {
+
+code, pre {
   background-color: #ddd;
+}
+code {
   padding: 0 2px;
 }
