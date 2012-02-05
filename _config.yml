@@ -11,4 +11,4 @@ pygments:    false
 markdown:    maruku
 permalink:   /:categories/:title
 
-exclude: Gemfile, Gemfile.lock, Rakefile, TODOS.txt, bin, ruby-webapps-tutoiral.tmproj
+exclude: Gemfile, Gemfile.lock, Rakefile, TODOS.txt, bin, ruby-webapps-tutoiral.tmproj, plan.txt
