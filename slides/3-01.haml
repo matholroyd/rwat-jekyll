@@ -1,0 +1,37 @@
+---
+title: "3-1 Sinatra in 2mins"
+group: slides
+layout: slide 
+---
+
+%h3 
+  Check files into 
+  %code git
+:plain
+  <pre>git init
+  git add .
+  git commit -m "My first check in"
+  </pre>
+  
+%h3 Tell Heroku about your app
+%p 
+  Replace
+  %code app-name
+  below with a 
+  %strong 
+    %em unique 
+  name!
+:plain
+  <pre>heroku create app-name
+  </pre>
+  
+%h3 
+  Deploy to Heroku via 
+  %code git
+
+:plain
+  <pre>git push heroku master</pre>
+
+%h3 And done!
+:plain
+  <pre>heroku open</pre>
