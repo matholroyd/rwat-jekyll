@@ -19,7 +19,7 @@ module Jekyll
         engine = Sass::Engine.new(content, :syntax => :scss)
         engine.render
       rescue StandardError => e
-        puts "!!! SASS Error: " + e.message
+        puts "xxxxxxxxxxxxxxxxxxxx !!! SASS Error: " + e.message
       end
     end
   end

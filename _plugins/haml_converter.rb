@@ -1,15 +1,9 @@
+require 'haml'
+
 module Jekyll
   class HamlConverter < Converter
     safe true
-
-    def setup 
-      return if @setup
-      require 'haml'
-      @setup = true
-    rescue
-      STDERR.puts 'do `gem install haml`'
-      raise FatalException.new("Missing dependency: haml")
-    end
+    priority :low
 
     def matches(ext)
       ext =~ /haml/i
@@ -20,9 +14,14 @@ module Jekyll
     end
 
     def convert(content)
-      setup
-      engine = Haml::Engine.new(content)
-      engine.render
+      begin
+        puts "Performing Haml Conversion."
+        engine = Haml::Engine.new(content)
+        engine.render
+      rescue StandardError => e
+        puts "xxxxxxxxxxxxxxxxxxxx !!! Haml Error: " + e.message
+      end
     end
   end
 end
+

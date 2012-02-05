@@ -19,7 +19,7 @@ module Jekyll
 
         begin
           self.data = YAML.load($1)
-          self.data["layout"] = IMPLICIT_LAYOUT
+          self.data["layout"] = IMPLICIT_LAYOUT if self.data["layout"].nil?
         rescue => e
           puts "YAML Exception reading #{name}: #{e.message}"
         end

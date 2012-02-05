@@ -3,20 +3,19 @@
 
 $line: 18px;
 
+
 #nav {
-  margin-bottom: $line;
-  label {
-    margin-right: 5px;
-  }
   ul {
-    display:inline;
     margin: 0;
     padding: 0;
     list-style-type:none;
-    li {
-      display:inline;
-      margin-right: 10px;
-    }
+  }
+}
+
+#header {
+  p {
+    margin-bottom:0;
+    font-style:italic;
   }
 }
 
@@ -31,4 +30,45 @@ code, pre {
 }
 code {
   padding: 0 2px;
+}
+
+
+body.default {
+  #nav {
+    margin-bottom: $line;
+    label {
+      margin-right: 5px;
+    }
+    ul {
+      display:inline;
+      li {
+        display:inline;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+
+body.slide {
+  #header {
+    margin-bottom: 2*18px;
+  }
+  #content {
+    font-size: 16px;
+    line-height: 18px;
+    min-height:20*18px;
+    ul {
+      li {
+        margin-bottom: 18px;
+        ul  {
+          
+        }
+  
+      }
+    }
+  }
+  .center {
+    text-align:center;
+  }
 }
