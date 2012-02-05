@@ -26,10 +26,14 @@ $line: 18px;
 
 
 code, pre {
+  line-height:18px;
   background-color: #ddd;
+  overflow:hidden;
+  vertical-align: top;
 }
 code {
   padding: 0 2px;
+  margin:0;
 }
 
 
@@ -54,6 +58,11 @@ body.slide {
   #header {
     margin-bottom: 2*18px;
   }
+  #nav {
+    ul {
+      padding-left: 5px;
+    }
+  }
   #content {
     font-size: 16px;
     line-height: 18px;
@@ -71,6 +80,19 @@ body.slide {
       }
     }
   }
+  dl {
+    dt {
+      clear:both;
+      float:left;
+      margin-right: 20px;
+    }
+    dd {
+      color:#444;
+      font-style:italic;
+      margin-bottom: 18px;
+    }
+  }
+  
   .center {
     text-align:center;
   }
