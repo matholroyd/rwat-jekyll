@@ -6,4 +6,13 @@
       {% include helpers/pages_list.html %}
     </ul>
   {% endfor %}
+
+  <label>Slides</label>
+  <ul>
+	  {% assign pages_list = site.pages %}  
+    {% assign group = "slides" %} 
+	  {% include helpers/pages_list.html %}
+  </ul>
 </nav>
+
+

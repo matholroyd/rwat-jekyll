@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> 
+  <meta property="og:image" content="http://thefetch.com/images/thefetch-logo-thumbnail.jpg" />
+
+	<title>Ruby Web Apps Tutorial</title>
+
+	<link rel="stylesheet" href="/stylesheets/screen.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="/stylesheets/main.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="/stylesheets/print.css" type="text/css" media="print" />
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen, projection">
+	<![endif]-->
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+
+</head>
+<body class="default {{ page.body_class }} {% if page.category %}{{page.category}}-{% endif %} {{page.title}}">
+  <div class="container prepend-4 span-16 append-4 last">
+  	<div id="content">
+  	  <h1>{{ page.title }}</h1>
+  	  {{ content }}
+    </div>
+    <footer id="footer"> 
+      Mat Holroyd &copy; 2012
+    </footer> 
+  </div>
+</body>
+</html>
