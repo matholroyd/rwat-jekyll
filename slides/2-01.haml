@@ -4,10 +4,10 @@ group: slides
 layout: slide 
 ---
 
-%p Web servers respond to browser requests
+%h3 Web apps process browser requests
 %ul
   %li 
-    Sinatra + Rails simply respond to 
+    They respond to 
     %code get
     ,
     %code post
@@ -15,22 +15,23 @@ layout: slide
     %code put
     and 
     %code delete 
-    requests
+    requests made by browsers
+  %li Track which user is who
+  %li Behind the scenes they often process data
 
-%p Web servers respond with 2 main types of data
+%h3 Web apps respond with 2 main types of data
 %ol
-  %li 
-    %p Static data – same for each user, stays same over time
-    %ul 
-      %li images – those used in the design of the site
-      %li stylesheets – .css files, they control look and feel 
-      %li javascript – animation, background + data processing
-      %li downloadable files, e.g. PDFs 
   %li
     %p Dynamic data – changes per user or over time
     %ul 
-      %li html
-      %li images – e.g. profile photos, person photo album
+      %li html – the content, e.g. the actual text + images shown on a page
+      %li some images/files – e.g. profile photos, personal photo album
+  %li 
+    %p Static data – same for each user &amp; stays same over time
+    %ul 
+      %li some images/files – e.g. logos, backgrounds, icons 
+      %li stylesheets – .css files, they control look and feel 
+      %li javascript – animation, background + data processing
         
     
         
