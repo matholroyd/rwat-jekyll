@@ -1,16 +1,25 @@
 ---
-title: "4-3 Sinatra play time!"
+title: "4-3 Sinatra assumptions"
 group: slides
 layout: slide 
 ---
 
-%h3 Lets build a simple app together
-%p 2 page app displays persons name + update it with a form
+%h3 Built in defaults/helpers
 %ul 
-  %li Look up info about sessions on the Sinatra website
-  %li Test manually setting session info
-  %li Display session info on first page
-  %li Add a form with single text box as 2nd page
-  %li Add route to accept posted form
+  %li 
+    Assumes views are under
+    %code /views
+  %li 
+    Assumes static assets are under
+    %code /public
+  %li 
+    Layout file is called 
+    %code /layout.erb
+    (if using erb)
+  %li 
+    Instance variables like
+    %code @name 
+    passed up to view
   
-
+    
+    

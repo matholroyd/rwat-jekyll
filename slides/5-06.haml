@@ -1,0 +1,44 @@
+---
+title: "5-6 cont..."
+group: slides
+layout: slide 
+---
+
+%p
+  File
+  %code /routes.rb
+  
+:plain
+  <pre>MyFawesomeApp::Application.routes.draw do
+    root :to => "home#index"
+    
+    get "/edit_name",     :controller => "name", :action => "edit"
+    post "/update_name",  :controller => "name", :action => "update"
+  end
+  </pre>
+  
+  
+%p
+  File
+  %code /app/controllers/home_controller.rb
+:plain
+  <pre>class HomeController < ApplicationController
+    def index
+    end
+  end
+  </pre>
+
+%p
+  File
+  %code /app/controllers/name_controller.rb
+:plain
+  <pre>class NameController < ApplicationController
+    def edit
+      @name = session[:name]
+    end
+    
+    def update
+      session[:name] = params[:name]
+    end
+  end
+  </pre>

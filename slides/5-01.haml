@@ -1,30 +1,26 @@
 ---
-title: "5-1 Rails structure"
+title: "5-1 Running the server"
 group: slides
 layout: slide 
 ---
 
-%ul
-  %li 
-    %p app
-    %ul
-      %li 
-        %p assets
-        %ul
-          %li images
-          %li javascript
-          %li stylesheets
-      %li controllers
-      %li helpers
-      %li mailers
-      %li models
-      %li views
-  %li config
-  %li db
-  %li lib
-  %li log
-  %li public
-  %li script
-  %li test
-  %li tmp
-  %li vendor
+%h3 Time to get jiggy!
+:plain
+  <pre>cd ~/projects 
+  rails new my-fawesome-app
+  cd my-fawesome-app
+  rails s  
+  </pre>
+
+%h2 Argh!!
+%p Bug in Rails 3.2.1 - a default gem requires something not installed
+%p
+  %code sublime .
+
+%p Once its fixed, run server again
+%p
+  %code rails s
+  
+%p
+  Open up browser to 
+  %code localhost:3000

@@ -29,12 +29,14 @@ $line: 18px;
 code, pre {
   line-height:18px;
   background-color: #ddd;
-  overflow:hidden;
   vertical-align: top;
 }
 code {
   padding: 0 2px;
   margin:0;
+}
+pre {
+  overflow:auto;
 }
 
 
