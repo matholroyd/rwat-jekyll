@@ -43,6 +43,9 @@ layout: slide
   %dt
     %code sublime . 
   %dd open up sublime editor in current directory
+
+%h4 Git
+%dl
   %dt
     %code git init 
   %dd create new git repository in current directory
@@ -55,5 +58,42 @@ layout: slide
   %dd Commit changes into git
   
   
-  
+%h4 Sinatra
+%dl
+  %dt
+    %code 
+      ruby 
+      %em my_app.rb
+  %dd 
+    run app – defaults to
+    %code localhost:4567
+
+
+%h4 Rails
+%dl
+  %dt
+    %code 
+      rails new  
+      %em&= "<app_name>"
+  %dd 
+    create a rails app with name 
+    %em&= "<app_name>"
+  %dt
+    %code 
+      rails s  
+  %dd 
+    spin up rails server – default to
+    %code localhost:3000
+  %dt
+    %code 
+      rails c  
+  %dd 
+    opens up ruby console with app loaded
+
+
+
+
+
+
+
 
