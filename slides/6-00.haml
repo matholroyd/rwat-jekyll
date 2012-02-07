@@ -1,0 +1,49 @@
+---
+title: "6-0 Rails Database love"
+group: slides
+layout: slide 
+---
+
+%p
+  %code rails g model Tweet body:string
+
+%p Creates a model and migration and a test!
+
+%p What can this model do? Open up the console...
+
+%pre
+  :plain
+    rails c
+    
+%p 
+  Lets twiddle with our tweets
+
+%pre
+  :erb
+    tweet.body 
+    tweet.new_record?
+    tweet.save
+    
+    Tweet.new :body => "I like peanuts"
+    Tweet.create :body => "I like peanuts"
+    
+    Tweet.all.each {|tweet| puts "#{tweet.id} - #{tweet.body}" }
+    Tweet.all.each {|tweet| puts tweet.inspect }
+    
+    Tweet.find(1)
+    Tweet.find(99)
+    
+    Tweet.first.update_attributes :body => "cow"
+    Tweet.first.attributes
+    Tweet.first.attributes["body"]
+    Tweet.first.attributes[:body]
+    
+    Tweet.find_by_body("cow")
+    Tweet.find_by_body("something else")
+    Tweet.find_by_body!("something else")
+    
+    Tweet.where(body: "cow")
+    Tweet.where(body: "something else")
+    Tweet.all(:conditions => {:body => "cow"})
+  
+  

@@ -1,0 +1,35 @@
+---
+title: "6-1 Messing with the model"
+group: slides
+layout: slide 
+---
+
+%pre
+  :plain
+    class Tweet < ActiveRecord::Base
+    
+      validates :body, 
+        :presence => true, 
+        :length => {:within => 1..140}
+    
+      def body
+        if super.present?
+          super + ", argh!"
+        else
+          nil
+        end
+      end
+    
+      def body=(value)
+        value = value.downcase
+
+        super value
+      end
+    
+    
+      scope :about_cows, lambda { where("body LIKE ?", "%cow%") } 
+    
+    end
+
+    
+   

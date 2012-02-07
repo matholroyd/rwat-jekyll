@@ -14,15 +14,24 @@ layout: slide
   File
   %code /app/views/home/index.html.erb
   
-:plain
-  <pre>
-  </pre>
+%pre
+  :escaped
+    <h1>Index</h1>
+  
+    <p>Your name is <%= @name %></p>
+    <%= link_to "Change name", "/edit_name" %>
 
 %p
   File
   %code /app/views/name/edit.html.erb
 
-:plain
-  <pre>
-  </pre>
+%pre
+  :escaped
+    <h1>Edit name</h1>
+
+    <form action="/update_name" method="POST">
+      <label>Enter your name</label>
+      <input name="name" type="text">
+      <input type="submit" value="Change name!">
+    </form>
 
