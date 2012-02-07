@@ -22,16 +22,27 @@
 
 </head>
 <body class="default {{ page.body_class }} {% if page.category %}{{page.category}}-{% endif %} {{page.title}}">
-  <div class="container prepend-4 span-16 append-4">
-    {% include helpers/nav_bar.html %}
-
-  	<div id="content">
-  	  <h1>{{ page.title }}</h1>
-  	  {{ content }}
+  <div class="container">
+    <nav id="nav-slides" class="nav span-5">
+      <p>
+        <a href="/">Home</a>
+      </p>
+      <ul>
+    	  {% assign pages_list = site.pages %}  
+        {% assign group = "slides" %} 
+    	  {% include helpers/pages_list.html %}
+      </ul>
+    </nav>
+    <div class="span-14 append-5 last">
+      {% include helpers/nav_bar.html %}
+    	<div id="content">
+    	  <h1>{{ page.title }}</h1>
+    	  {{ content }}
+      </div>
+      <footer id="footer"> 
+        Mat Holroyd &copy; 2012
+      </footer> 
     </div>
-    <footer id="footer"> 
-      Mat Holroyd &copy; 2012
-    </footer> 
   </div>
 </body>
 </html>
